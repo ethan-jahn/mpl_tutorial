@@ -12,13 +12,13 @@ Before jumping into plotting, let's talk about types of graphics. This is import
 
  Let's start with the most common image type: JPGs are lossy compressed images that don't always retain all of the information you might want. They are also unable to encode transparency, which may be useful in some cases. This is an extreme example, but this type of lossy compression is always being done to JPG images.
 
-![jpg_compression](/home/ethan/code/mpl_tutorial/jpg_compression.jpg)
+![jpg_compression](jpg_compression.jpg)
 
 PNGs are also common. These are lossless compressed images with a transparency channel. They will retain the image information exactly as rendered (hence lossless), but are limited by resolution. Both PNGs and JPGs are known as "raster graphics" which store information in a dot matrix data structure, which essentially means their pixels are hard-coded to the file and cannot be changed without altering the file itself. 
 
 An alternative to raster graphics is vector graphics. Instead of storing a matrix of colored pixels, vector graphics store both points and curves that are used to render the image, meaning they can be scaled to any size without downgrading the image quality. This is ideal for scientific plotting as the exact location of points and lines on a plot will be independent of screen resolution, and often times scientific plots contain many details that will be lost upon zooming in on a figure if it is saved as a raster graphic. This is why many journals require submissions with figures in vector graphic format, such as PDF or EPS. 
 
-![](/home/ethan/code/mpl_tutorial/png_vs_pdf.png)
+![](png_vs_pdf.png)
 
 Notice how, despite the high zoom level, the PDF image produces smooth lines, while the PNG, even with a high DPI (dots per inch), produces a pixelated image. This is why it's good practice to produce PDF (or other vector graphic formats such as SVG or EPS) images for publication. When I'm producing images for analysis and pre-publication work, I usually choose to save them as mid to low resolution PNGs to save storage space. If I think a plot might be included in a publication, I always save a PDF version. 
 
@@ -71,7 +71,7 @@ plt.savefig('scatter.png',format='png',dpi=300)
 plt.show()
 ```
 
-![](/home/ethan/code/mpl_tutorial/plt_simple/scatter_0.png)
+![](scatter_0.png)
 
 You'll notice this is a very bare-bones plot - there are no axes label, legends, units, or anything that would help you interpret what the data is saying. Let's edit the scatter statement to include a label on the data:
 
@@ -89,7 +89,7 @@ plt.legend()
 
 It's generally a good idea to put this and the end of the script, after everything has been plotted, and right before you save or show the figure. Here's the new image:
 
-![](/home/ethan/code/mpl_tutorial/plt_simple/scatter_1.png)
+![](scatter_1.png)
 
 We can go one step further now and specify a few other things to make the plot look more professional. Let's add a line before plotting anything to specify our font style:
 
@@ -106,7 +106,7 @@ plt.xticks([0,0.2,0.4,0.6,0.8,1.0])
 plt.yticks([-0.1,0,0.1,0.2,0.3])
 ```
 
-![](/home/ethan/code/mpl_tutorial/plt_simple/scatter_2.png)
+![](scatter_2.png)
 
 That's looking a lot better, but there's still a few things that look off to me. These are aethestic choices, but they do impact the legibility of plots, so I encourage you to constantly be thinking about how to create more readable plots. Here's a few things I notice:
 
