@@ -4,7 +4,7 @@
 
 Matplotlib (MPL) is a very useful yet somewhat disorganized collection of technical plotting routines. Their documentation is useful, but it doesn't give you a sense of what types of things are useful for scientific plotting and what options are available to you as you do your analysis. This tutorial is my attempt at organizing and understanding the routines in MPL to expedite the learning process of students new to scientific plotting in python.
 
-This tutorial will also make heavy use of numpy. I will explain things that are not obvious and link to documentation when using routines, but I will assume that you are familiar with numerical coding to some extent. 
+This tutorial will also make heavy use of numpy: https://numpy.org/doc/stable/
 
 ### Graphics
 
