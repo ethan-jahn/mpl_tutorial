@@ -1,6 +1,6 @@
 
 
-# Intro to Matplotlib 
+# Intro to Plotting & Matplotlib 
 
 Matplotlib (MPL) is a very useful yet somewhat disorganized collection of technical plotting routines. Their documentation is useful, but it doesn't give you a sense of what types of things are useful for scientific plotting and what options are available to you as you do your analysis. This tutorial is my attempt at organizing and understanding the routines in MPL to expedite the learning process of students new to scientific plotting in python.
 
